@@ -18,4 +18,12 @@ public class ShoppingController {
 
     return mav;
   }
+
+  @RequestMapping("/Order")
+  public ModelAndView order(ModelAndView mav) {
+
+    mav.setViewName("cartView");
+
+    return mav;
+  }
 }
