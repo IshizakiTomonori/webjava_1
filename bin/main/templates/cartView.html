@@ -7,7 +7,15 @@
 <body>
 <h1>カート</h1>
 
+<table>
+  <tr>
+    <td>[[${CartItem.name}]]</td>
+    <td>[[${CartItem.price}]]円</td>
+  </tr>
+</table>
 
-
+<form action="#" th:action="@{/List}">
+  <input type="submit" value="リストに戻る" />
+</form>
 </body>
 </html>
