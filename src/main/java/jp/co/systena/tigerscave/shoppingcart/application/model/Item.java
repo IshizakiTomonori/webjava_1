@@ -1,4 +1,4 @@
-package jp.co.systena.tigerscave.shoppingcart.model;
+package jp.co.systena.tigerscave.shoppingcart.application.model;
 
 public class Item {
   private int itemId;

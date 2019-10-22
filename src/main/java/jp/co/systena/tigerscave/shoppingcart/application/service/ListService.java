@@ -1,8 +1,8 @@
-package jp.co.systena.tigerscave.shoppingcart.service;
+package jp.co.systena.tigerscave.shoppingcart.application.service;
 
 import java.util.HashMap;
 import java.util.Map;
-import jp.co.systena.tigerscave.shoppingcart.model.Item;
+import jp.co.systena.tigerscave.shoppingcart.application.model.Item;
 
 public class ListService {
   public Map getItemList() {
