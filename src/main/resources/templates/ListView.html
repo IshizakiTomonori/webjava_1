@@ -12,7 +12,7 @@
 <tr>
   <th>商品名</th><th>価格</th>
 </tr>
-<tr th:each="element : ${item_list}">
+<tr th:each="element : ${ItemList}">
   <td>[[${element.value.name}]]</td>
   <td>[[${element.value.price}]]円</td>
 </tr>
