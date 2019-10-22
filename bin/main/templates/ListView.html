@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>商品一覧</h1>
+
+<table>
+<tr>
+  <th>商品名</th><th>価格</th>
+</tr>
+<tr th:each="element : ${item_list}">
+  <td>[[${element.value.name}]]</td>
+  <td>[[${element.value.price}]]円</td>
+</tr>
+</table>
+
+</body>
+</html>
