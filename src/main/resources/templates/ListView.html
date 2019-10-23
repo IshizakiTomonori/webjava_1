@@ -18,7 +18,7 @@
     <td>[[${element.value.name}]]</td>
     <td>[[${element.value.price}]]円</td>
     <td>
-    <form action="#" th:action="@{/List}" th:object="${ItemForm}" method="POST"  >
+    <form action="#" th:action="@{/List}" th:object="${ListForm}" method="POST"  >
       <input type="hidden" name="itemId" th:value="${element.value.itemId}" />
       <input type="submit" value="カートに追加" />
     </form>
