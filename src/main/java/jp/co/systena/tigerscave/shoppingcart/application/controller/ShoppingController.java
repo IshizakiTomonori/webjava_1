@@ -3,9 +3,7 @@ package jp.co.systena.tigerscave.shoppingcart.application.controller;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,7 +26,7 @@ public class ShoppingController {
 
 
   @RequestMapping(value = "/List", method = RequestMethod.POST)
-  public ModelAndView order(ModelAndView mav, @Valid ListForm listForm, BindingResult bindingResult) {
+  public ModelAndView order(ModelAndView mav, ListForm listForm) {
     // 商品のIDが入っている
     int item_id = listForm.getItemId();
 
